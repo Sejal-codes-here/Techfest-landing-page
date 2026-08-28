@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techfest — IIT Bombay | An Aetherial Renaissance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header id="siteHeader">
+  <div class="logo"><span class="dot"></span>TECHFEST&nbsp;IITB</div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#domains">Events</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#legacy">Legacy</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+  </nav>
+  <a href="#register" class="btn-ghost-sm nav-cta">Register</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <canvas id="stars"></canvas>
+
+  <svg class="astrolabe" viewBox="0 0 1000 1000">
+    <g class="ring ring-1">
+      <circle cx="500" cy="500" r="440" fill="none" stroke="#c9a24d" stroke-opacity="0.35" stroke-width="1"/>
+      <g stroke="#c9a24d" stroke-opacity="0.4">
+        <g id="ticks1"></g>
+      </g>
+    </g>
+    <g class="ring ring-2">
+      <circle cx="500" cy="500" r="340" fill="none" stroke="#8a92b3" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 10"/>
+    </g>
+    <g class="ring ring-3">
+      <circle cx="500" cy="500" r="240" fill="none" stroke="#c1552e" stroke-opacity="0.35" stroke-width="1"/>
+      <path d="M500 260 L508 285 L500 300 L492 285 Z" fill="#c9a24d" fill-opacity="0.6"/>
+      <path d="M500 740 L508 715 L500 700 L492 715 Z" fill="#c9a24d" fill-opacity="0.6"/>
+      <path d="M260 500 L285 508 L300 500 L285 492 Z" fill="#8a92b3" fill-opacity="0.6"/>
+      <path d="M740 500 L715 508 L700 500 L715 492 Z" fill="#8a92b3" fill-opacity="0.6"/>
+    </g>
+    <circle cx="500" cy="500" r="120" fill="none" stroke="#c9a24d" stroke-opacity="0.5" stroke-width="1"/>
+  </svg>
+
+  <div class="hero-content">
+    <span class="eyebrow">IIT Bombay · 29th Edition</span>
+    <h1 class="brand">TECHFEST</h1>
+    <div class="theme-line">An Aetherial Renaissance</div>
+    <p class="hero-desc">Asia's largest science and technology festival returns to Powai — three days where a hackathon runs on the same clock as a night sky, and every discipline from robotics to renaissance art shares one stage.</p>
+    <div class="hero-ctas">
+      <a href="#register" class="btn-primary">Register Now</a>
+      <a href="#domains" class="btn-outline">Explore Events</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="stat"><div class="num">29</div><div class="lbl">Years Running</div></div>
+  <div class="stat"><div class="num">175K+</div><div class="lbl">Attendees</div></div>
+  <div class="stat"><div class="num">2,500+</div><div class="lbl">Partner Colleges</div></div>
+  <div class="stat"><div class="num">₹1Cr+</div><div class="lbl">Prize Pool</div></div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow-sm">The Theme</span>
+      <h2 style="font-family:var(--serif); font-size:clamp(2rem,4vw,3rem); margin-bottom:26px;">Two ideas, one campus</h2>
+      <p class="lead">Five centuries ago, the same hands that sketched cathedrals also charted the stars — refusing to separate the beautiful from the exact. Techfest borrows that instinct.</p>
+      <p>This edition sets the precision of a hackathon inside the ornament of an atelier, and the scale of orbital mechanics inside three days on a Mumbai campus. Robotics arenas sit beside speaker halls; drone races run under the same sky as an astronomy exhibit.</p>
+      <div class="founded">Est. 1998 — organised entirely by the student community of IIT Bombay.</div>
+    </div>
+    <div class="orrery-wrap reveal">
+      <svg viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="180" fill="none" stroke="#22264a" stroke-width="1"/>
+        <circle cx="200" cy="200" r="140" fill="none" stroke="#22264a" stroke-width="1" stroke-dasharray="3 8"/>
+        <circle cx="200" cy="200" r="95" fill="none" stroke="#22264a" stroke-width="1"/>
+        <circle cx="200" cy="200" r="50" fill="none" stroke="#c9a24d" stroke-width="1"/>
+        <circle cx="200" cy="20" r="5" fill="#c9a24d"/>
+        <circle cx="340" cy="200" r="4" fill="#8a92b3"/>
+        <circle cx="200" cy="105" r="3.5" fill="#c1552e"/>
+        <text x="200" y="206" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="26" fill="#e6c877" font-style="italic">TF</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOMAINS ================= -->
+<section class="domains" id="domains">
+  <div class="section-head reveal">
+    <span class="eyebrow-sm">Compete</span>
+    <h2>Arenas that hold the prize pool</h2>
+    <p>Free to enter, open to any college or background. Pick a discipline — or bring a team that spans several.</p>
+  </div>
+  <div class="domain-grid">
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="6" y="9" width="12" height="9" rx="1.5"/><circle cx="9.5" cy="13" r="1"/><circle cx="14.5" cy="13" r="1"/><path d="M12 9V5"/><circle cx="12" cy="4" r="1.2"/></svg></div>
+      <span class="tag">Combat &amp; Build</span>
+      <h3>Robotics</h3>
+      <p>Design bots for arenas like Cozmoclench, where circuitry meets combat and a season of build hours gets tested in minutes.</p>
+    </div>
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+      <span class="tag">Frontier Problems</span>
+      <h3>Artificial Intelligence</h3>
+      <p>Vision, language, autonomous agents — problems judged by people building the real thing, not toy benchmarks.</p>
+    </div>
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 19V5a1 1 0 011-1h9l6 6v9a1 1 0 01-1 1H5a1 1 0 01-1-1z"/><path d="M14 4v6h6"/></svg></div>
+      <span class="tag">24 Hours</span>
+      <h3>Hackathons</h3>
+      <p>One hard problem, a room full of people who forgot to sleep, and a demo clock that doesn't move for anyone.</p>
+    </div>
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 5h4v4"/></svg></div>
+      <span class="tag">Strategy &amp; Finance</span>
+      <h3>Case Competitions</h3>
+      <p>Consulting and finance problems pulled from real boardrooms, argued in front of people who've sat in them.</p>
+    </div>
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l2 5 5 .5-3.8 3.3 1 5.2L12 14.5 7.8 17l1-5.2L5 8.5 10 8z"/></svg></div>
+      <span class="tag">Design &amp; Fly</span>
+      <h3>Aeromodelling</h3>
+      <p>Build and fly your own aircraft, judged on payload, precision, and the nerve to trust your own soldering.</p>
+    </div>
+
+    <div class="domain-card reveal">
+      <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg></div>
+      <span class="tag">Night Skies</span>
+      <h3>Drone Racing</h3>
+      <p>First-person view, tight gates, margins measured in milliseconds — flown under the campus night sky.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WORKSHOPS ================= -->
+<section class="workshops" id="workshops">
+  <div class="section-head reveal">
+    <span class="eyebrow-sm">Learn</span>
+    <h2>25+ domains, hands on the tools</h2>
+    <p>Skill-building sessions that run parallel to the competitions — pick a craft, not just a lecture.</p>
+  </div>
+  <div class="chip-field reveal">
+    <span class="chip">Deep Learning</span>
+    <span class="chip">Generative AI</span>
+    <span class="chip">Robotics</span>
+    <span class="chip">Drone Systems</span>
+    <span class="chip">Cybersecurity</span>
+    <span class="chip">Product Design</span>
+    <span class="chip">Quant Finance</span>
+    <span class="chip">Space Technology</span>
+    <span class="chip">IoT Engineering</span>
+    <span class="chip">Game Development</span>
+    <span class="chip">Data Science</span>
+    <span class="chip">Entrepreneurship</span>
+    <span class="chip">Biotechnology</span>
+    <span class="chip">Web3 &amp; Blockchain</span>
+    <span class="chip">Computer Vision</span>
+  </div>
+</section>
+
+<!-- ================= LEGACY MARQUEE ================= -->
+<section class="legacy" id="legacy">
+  <div class="section-head reveal">
+    <span class="eyebrow-sm">Legacy</span>
+    <h2>Voices that have taken this stage</h2>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>N. R. Narayana Murthy</span>
+      <span>General Anil Chauhan</span>
+      <span>ISRO Leadership</span>
+      <span>Gaganyaan Astronaut-Designates</span>
+      <span>Dr. G. Satheesh Reddy</span>
+      <span>Lars Rasmussen</span>
+      <span>N. R. Narayana Murthy</span>
+      <span>General Anil Chauhan</span>
+      <span>ISRO Leadership</span>
+      <span>Gaganyaan Astronaut-Designates</span>
+      <span>Dr. G. Satheesh Reddy</span>
+      <span>Lars Rasmussen</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section class="timeline" id="timeline">
+  <div class="section-head reveal">
+    <span class="eyebrow-sm">The Road to December</span>
+    <h2>Three checkpoints, one campus finale</h2>
+  </div>
+  <div class="tl-track reveal">
+    <div class="tl-item">
+      <div class="node"></div>
+      <div class="when">Now Open</div>
+      <h4>Registrations</h4>
+      <p>Applications open nationwide for every competition and workshop — free to enter, no college gatekeeping.</p>
+    </div>
+    <div class="tl-item">
+      <div class="node"></div>
+      <div class="when">Autumn</div>
+      <h4>Regional Rounds</h4>
+      <p>Shortlists and qualifiers run across partner cities, narrowing the field ahead of the main campus.</p>
+    </div>
+    <div class="tl-item">
+      <div class="node"></div>
+      <div class="when">December</div>
+      <h4>The Finale, IIT Bombay</h4>
+      <p>Three days at Powai — competitions, exhibitions, speaker sessions, and the night shows Techfest is known for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-banner" id="register">
+  <h2>The festival begins <em>where your application ends.</em></h2>
+  <div class="hero-ctas" style="animation:none; opacity:1;">
+    <a href="https://techfest.org" class="btn-primary">Register on techfest.org</a>
+    <a href="#domains" class="btn-outline">View All Events</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><span class="dot"></span>TECHFEST&nbsp;IITB</div>
+      <p>Asia's largest science and technology festival — organised annually, entirely by the student community of IIT Bombay since 1998.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Festival</h5>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#domains">Competitions</a></li>
+        <li><a href="#workshops">Workshops</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Venue</h5>
+      <ul>
+        <li style="color:var(--mist-dim); font-family:var(--mono); font-size:.82rem;">IIT Bombay, Powai</li>
+        <li style="color:var(--mist-dim); font-family:var(--mono); font-size:.82rem;">19.1336° N, 72.9153° E</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© TECHFEST, IIT BOMBAY — 29TH EDITION</span>
+    <span>DESIGN CONCEPT · AN AETHERIAL RENAISSANCE</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
